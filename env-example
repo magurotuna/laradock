@@ -14,7 +14,7 @@ APP_CODE_PATH_CONTAINER=/var/www
 APP_CODE_CONTAINER_FLAG=:cached
 
 # Choose storage path on your machine. For all storage systems
-DATA_PATH_HOST=~/.laradock/data
+DATA_PATH_HOST=../laradock_storage
 
 ### Drivers ################################################
 
@@ -119,7 +119,7 @@ WORKSPACE_INSTALL_PRESTISSIMO=false
 WORKSPACE_INSTALL_LINUXBREW=false
 WORKSPACE_INSTALL_MC=false
 WORKSPACE_INSTALL_SYMFONY=false
-WORKSPACE_INSTALL_PYTHON=false
+WORKSPACE_INSTALL_PYTHON=true
 WORKSPACE_INSTALL_IMAGE_OPTIMIZERS=false
 WORKSPACE_INSTALL_IMAGEMAGICK=false
 WORKSPACE_INSTALL_TERRAFORM=false
@@ -133,7 +133,7 @@ WORKSPACE_INSTALL_MYSQL_CLIENT=false
 WORKSPACE_PUID=1000
 WORKSPACE_PGID=1000
 WORKSPACE_CHROME_DRIVER_VERSION=2.42
-WORKSPACE_TIMEZONE=UTC
+WORKSPACE_TIMEZONE=Asia/Tokyo
 WORKSPACE_SSH_PORT=2222
 
 ### PHP_FPM ###############################################
@@ -209,7 +209,7 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
+MYSQL_VERSION=5.7
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
